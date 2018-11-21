@@ -79,6 +79,23 @@ div.links1 {
 	border: .2vw solid lightgrey;
 	float: left;
 	overflow: auto;
+	background-image: url(surfimage.jpg);
+	background-size: 50%;
+}
+div.links1 ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+}
+
+div.links1 a {
+	display: block;
+	margin: 0.3vw 4vw;
+	padding: 0.5vw;
+	background-color: #333;
+	text-decoration: none;
+	color: white;
+	text-align: center;
 }
 div.frame {
 	width: 65vw;
@@ -107,7 +124,7 @@ div.window {
 	background-image: url(cavern.jpg);
 }
 
-.buythis a {
+#buy1 a, #buy2 a, #buy3 a, #buy4 a, #buy5 a, #buy6 a, #buy7 a{
 	text-decoration: none;
 	color: white;
 	display: block;
@@ -118,7 +135,7 @@ div.window {
 	margin:auto;
 }
 
-div.buythis {
+div#buy1, div#buy2, div#buy3, div#buy4, div#buy5, div#buy6, div#buy7 {
 	width: 18vw;
 	height: 9.5vw;
 	padding: 7.5vw 0 0 0;
@@ -129,19 +146,44 @@ div.buythis {
 	background-image: url(leash.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 70%;
+	background-size: 100%;
+}
+div#buy2 {
+	background-image: url(redfins.jpg);
+}
+div#buy3 {
+	background-image: url(bluefins.jpg);
+}
+div#buy4 {
+	background-image: url(wetsuit.jpg);
+}
+div#buy5 {
+	background-image: url(surfboardroom.jpg);
+}
+div#buy6 {
+	background-image: url(surfboardroom.jpg);
+}
+div#buy7 {
+	background-image: url(redfins.jpg);
 }
 
-div.buythis a:hover {
-	background-color: red;
-	opacity: 1;
-}
+
 div.window:hover, div.links1:hover, div.frame:hover, div.buythis:hover {
 	border: .2vw solid grey;
 	box-shadow: 5px 10px 18px grey;
 	z-index: 1;
 }
 
-.window a:hover {
+
+.window a:hover, div.links1 a:hover {
 	background-color: red;
+}
+
+div.clear {
+	clear: both;
+}
+
+#buy1 a:hover, #buy2 a:hover, #buy3 a:hover, #buy4 a:hover, #buy5 a:hover, #buy6 a:hover, #buy7 a:hover {
+	background-color: red;
+	opacity: 1;
 }
